@@ -68,3 +68,27 @@ const obtenerFecha = () => {
 //obtenerFecha()
 
 setInterval(obtenerFecha, 1000);
+
+//cambiar color
+
+const cambiarColor = (color) => {
+  switch (color) {
+    case 'azul':
+      fecha.className = 'azul';
+      hora.className = 'azul';
+      return;
+    case 'rosa':
+      fecha.className = 'rosa';
+      hora.className = 'rosa';
+      return;
+    case 'verde':
+      fecha.className = 'verde';
+      hora.className = 'verde';
+      return;
+
+    default:
+      fecha.className = 'azul';
+      hora.className = 'azul';
+      return;
+  }
+};
